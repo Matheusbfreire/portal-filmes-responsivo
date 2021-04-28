@@ -21,9 +21,79 @@ body {
     color: white;
 }
 
+.logobx {
+    max-width: 10%;
+    padding-bottom: 15px;
+}
+
+.botao {
+    padding-top: 40px;
+}
+
 /* Geral - Fim */
 
 /* Novidades - Inicio */
+
+.novidades{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+div.novidades {
+    display: flex;
+}
+
+.novidades  img {
+    padding: 30px;
+}
+
+.novidades h4 {
+    color: black;
+}
+
+.fotos{
+    border: 1px solid;
+}
+
+.noticia_text {
+    display: inline-block;
+}
+
+.noticia {
+    padding-bottom: 10px;
+}
+
+.noticia img {
+    max-width: 200px;
+    max-height: 200px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+#novidade{
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: justify;
+    margin-top: -2.2%;
+    font-size: 15px;
+}
+
+.novidades-icon{
+    margin-top: 3%;
+    border: 0.2px solid;
+    cursor: pointer; 
+    border-radius: 5px;
+    background-color: rgb(215, 194, 15); 
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+
+}
+
+.novidades-icon:hover{
+    background-color: rgb(0, 0, 0); 
+    color: rgb(215, 194, 15); 
+}
 
 .novidades{
     display: flex;
@@ -244,26 +314,30 @@ body {
     max-width: 150px;
 }
 
-/* Menu - Fim */
-
-.logobx {
-    max-width: 10%;
-    padding-bottom: 15px;
-}
-
-.search_box {
-    height: 25px;
-    width: 200px;
-}
-
 .header svg {
     height: 20px;
     padding-left: 5px;
 }
 
+/* Menu - Fim */
+
+/* Making Of - Inicio */
+
+.vid {
+    padding-right: 30px;
+}
+
 .making-of {
     display: flex;
 }
+
+.princ {
+    width: 100%;
+}
+
+/* Making Of - Fim */
+
+/* Footer - Inicio */
 
 .footer {
     padding-top: 40px;
@@ -272,22 +346,18 @@ body {
     color: white;
 }
 
-.botao {
-    padding-top: 40px;
+.rede_social {
+    max-width: 30px;
+    color: black;
+    padding-right: 10px;
 }
 
-.final {
-    display: flex;
-    padding-top: 20px;
-}
+/* Footer - Fim */
+
+/* Notícia - Inicio */
 
 .noticia {
     padding-bottom: 10px;
-}
-
-.cabecalho img {
-    padding-right: 10px;
-    padding-left: 0px;
 }
 
 .noticia_text {
@@ -295,113 +365,7 @@ body {
     padding: 0px;
 }
 
-.sobre_text {
-    display: inline-block;
-    text-align: justify;
-}
-
-.pessoa {
-    max-width: 15px;
-}
-
-.rede_social {
-    max-width: 30px;
-    color: black;
-    padding-right: 10px;
-}
-
-.noticia_img {
-    height: 200px;
-    width: 200px;
-    padding-top: 0px;
-}
-
-.noticias {
-    display: flex;
-}
-
-.novidades{
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-div.novidades {
-    display: flex;
-}
-
-.novidades  img {
-    padding: 30px;
-}
-
-.novidades h4 {
-    color: black;
-}
-
-.final {
-    display: flex;
-    padding-top: 20px;
-}
-
-.noticia_text {
-    display: inline-block;
-}
-
-.noticia {
-    padding-bottom: 10px;
-}
-
-.noticia img {
-    max-width: 200px;
-    max-height: 200px;
-    padding-right: 20px;
-    padding-left: 10px;
-}
-
-.sobre_text {
-    display: inline-block;
-    text-align: justify;
-}
-
-#novidade{
-    text-decoration: none;
-    vertical-align: baseline;
-    text-align: justify;
-    margin-top: -2.2%;
-    font-size: 15px;
-}
-
-.novidades-icon{
-    margin-top: 3%;
-    border: 0.2px solid;
-    cursor: pointer; 
-    border-radius: 5px;
-    background-color: rgb(215, 194, 15); 
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-
-}
-
-.novidades-icon:hover{
-    background-color: rgb(0, 0, 0); 
-    color: rgb(215, 194, 15); 
-}
-
-.fotos{
-    border: 1px solid;
-}
-
-.vid {
-    padding-right: 30px;
-}
-
-.princ {
-    width: 100%;
-}
-
-.pb-5 svg {
-    color: rgb(251, 255, 0)
-}
+/* Notícia - Fim */
 
 /* Avaliações - Inico */
 
@@ -530,6 +494,10 @@ section .section-title {
     border-radius: 50%;
 }
 
+.pb-5 svg {
+    color: rgb(251, 255, 0)
+}
+
 /* Avaliações - Fim */
 
 /* Medias Queries - Inicio */
@@ -614,6 +582,10 @@ section .section-title {
 
     .texto_pes i {
         display: none;
+    }
+
+    .x {
+        position: fixed;
     }
 
     .menu-icon {
