@@ -17,21 +17,13 @@ body {
     margin-bottom: 20px;
 }
 
-.lancamentos_media {
-    display: none;
+.botao {
+    color: white;
 }
 
-#menuToggle {
-    display: none;
-}
+/* Geral - Fim */
 
-.menu-icon {
-    display: none;
-}
-
-/* Index - Inicio */
-
-/* Novidades */
+/* Novidades - Inicio */
 
 .novidades{
     display: flex;
@@ -66,7 +58,9 @@ body {
     border: 1px solid;
 }
 
-/* Sobre */
+/* Novidades - Fim */
+
+/* Sobre - Inicio */
 
 #sobre{
     text-align: justify;
@@ -74,8 +68,10 @@ body {
     font-size: 18px;
 }
 
+/* Sobre - Fim */
 
-/* Campo de pesquisa */
+
+/* Caixa de Pesquisa - Inicio */
 
 .texto_pes{
     display: flex;
@@ -117,11 +113,32 @@ body {
     padding-left: 20px;
 }
 
+/* Caixa de Pesquisa - Fim */
+
+/* Lançamentos - Inicio */
+
+.lancamento_reserva {
+    display: none;
+}
 
 .img_capa {
     min-height: 400px;
     width: 280px;
 }
+
+.img_capa:hover {
+    opacity: 0.5;
+}
+
+.titulo {
+    text-align: center;
+    padding: 15px;
+    height: 80px;
+}
+
+/* Lançamentos - Fim */
+
+/* Carrossel - Inicio */
 
 #MiCarousel{
     margin-top: 10px;
@@ -145,10 +162,14 @@ body {
 }
   
 .div-r{
-    color: white;
+    color: rgb(255, 255, 255);
     height: 450px;
     padding: 40px;
     background: black;
+}
+
+.div-r svg {
+    color: rgb(251, 255, 0);
 }
   
 .carousel-pagination{
@@ -169,10 +190,9 @@ body {
     display: none;
 }
 
-.banner {
-    width: 100%;
-    height: 100%;
-}
+/* Carrossel - Fim */
+
+/* Destaques - Inicio */
 
 .destaques img {
     height: 200px;
@@ -186,6 +206,18 @@ body {
     width: 130px;
     height: 25px;
     text-align: center;
+}
+
+/* Destques - Fim */
+
+/* Menu - Inicio */
+
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
 }
 
 .menu1 {
@@ -208,15 +240,11 @@ body {
     margin-left: -320px;
 }
 
-.titulo {
-    text-align: center;
-    padding: 15px;
-    height: 80px;
-}
-
 .logo {
     max-width: 150px;
 }
+
+/* Menu - Fim */
 
 .logobx {
     max-width: 10%;
@@ -367,15 +395,15 @@ div.novidades {
     padding-right: 30px;
 }
 
-/* Index - Fim */
+.princ {
+    width: 100%;
+}
 
-/* Caixa de Pesquisa - Inicio */
+.pb-5 svg {
+    color: rgb(251, 255, 0)
+}
 
-
-
-/* Caixa de Pesquisa - Fim */
-
-/* Card - Inico */
+/* Avaliações - Inico */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -502,11 +530,9 @@ section .section-title {
     border-radius: 50%;
 }
 
-/* Card - Fim */
+/* Avaliações - Fim */
 
-/* Geral - Fim */
-
-/* Medias Queries - Iinicio */
+/* Medias Queries - Inicio */
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -516,265 +542,42 @@ section .section-title {
     user-select: none;
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
-    .container_nav {
-        display: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    .menu1 {
-        display: flex;
-        position: fixed;
-        flex-wrap: wrap;
-        align-content: center;
-        top: 0px;
-        left: 320px;
-        width: 100%;
-        height: 0%;
-        background-color: rgba(0, 0, 0, 0.7);
-        overflow: hidden;
-        -webkit-transition: height 0.3s;
-        -moz-transition: height 0.3s;
-        -ms-transition: height 0.3s;
-        -o-transition: height 0.3s;
-        transition: height 0.3s;
-        z-index: 998;
-    }
-
-    .menu1 a {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 20px;
-    }
+@media screen and (max-width:575px) {
     .menu-icon {
-        width: 50px;
-        height: inherit;
-        display: block;
-        position: absolute;
-        top: 55px;
-        right: 30px;
-        line-height: 60px;
-        color: white;
-        z-index: 999;
-    }
-    #menuToggle:checked ~ label i:nth-child(2) {
-      display: block;
-    }
-    #menuToggle:checked ~ label i:first-child {
-      display: none;
-    }
-    #menuToggle:not(:checked) ~ label i:first-child {
-      display: block;
-    }
-    #menuToggle:not(:checked) ~ label i:nth-child(2) {
-      display: none;
-    }
-  
-    #menuToggle:checked ~ nav {
-        height: 100%;
-    }
-    .menu-icon i {
-        font-size: 1.7em;
-    }
-
-    .search_box,
-    .search-icon {
-        display: none;
-    }
-    
-    
-    .lancamentos_media {
-        display: block;
-        padding-top: 50px;
-    }
-
-    .destaques img {
-        min-width: 100%;
-        height: 500px;
-        padding-bottom: 15px;
-    }
-
-    .noticia {
-        display: block;
-    }
-
-    .noticia img {
-        min-width: 150%;
-        min-height: 350px;
-    }
-
-    .noticia_text {
-        min-width: 150%;
-    }
-
-    .final {
-        display: block;
-        width: 150%;
-    }
-
-    .sobre_text {
-        padding-bottom: 15px;
-    }
-
-    .logobx {
-        display: none;
-    }
-
-    .capa_site {
-        display: block;
-    }
-
-    .capa_princ {
-        min-width: 100%;
-    }
-
-    .infos {
-        min-width: 50%;
-        font-size: 20px;
-        margin-top: 20px;
-        display: inline-block;
-    }
-
-    .avaliacao {
-        min-width: 50%;
-        display: inline-block;
-        top: 0px;
-    }
-
-    .header {
-        height: 100px;
-    }
-
-    .logo {
-        height: 100%;
-        width: 80%;
-    }
-
-    .making-of {
-        display: block;
-    }
-}
-
-@media screen and (max-width:600px) {
-
-    .lancamentos_media {
-        display: block;
-        padding-top: 50px;
-    }
-
-    .titulo {
-        padding-top: 120px;
-    }
-    
-    .carousel,
-    .slide {
-        display: none;
-    }
-
-    .lancamentos_media1 {
-        width: 100%;
-        height: 130px;
-    }
-
-    .lancamentos_media2 {
-        width: 100%;
-    }
-
-    .lancamentos_media3 {
-        width: 100%;
-    }
-
-    .lancamentos_media1 {
-        margin-bottom: 80px;
-    }
-
-    .destaques img {
-        min-width: 100%;
-        height: 500px;
-        padding-bottom: 15px;
+        right: 30px !important;
     }
 
     .seletor {
-        width: 40%;
-        margin-left: 200px;
-        margin-bottom: 15px;
+        right: -230px;
+        margin-bottom: 20px;
     }
 
-    .making-of {
-        display: block;
-    }
-    
-    .final {
-        display: block;
-        width: 100%;
-    }
-
-    .noticia {
-        display: block;
-    }
-
-    .noticia img {
+    .img_capa {
         min-width: 100%;
     }
 
-    .noticia_text {
+    .making-of iframe {
         min-width: 100%;
     }
 
-    .sobre_text {
-        padding-bottom: 15px;
-    }
-
-    .logobx {
-        display: none;
-    }
-
-    .main_makingof {
-        padding-top: 120px;
-    }
-
-    .vid {
-        width: 100%;
-    }
-
-    .logo {
-        min-width: 100px;
-    }
-
-    .header {
-        position: fixed;
-        z-index: 999;
-        height: 100px;
-    }
-
-    .capa_princ {
+    .novidades  {
+        display: flex;
+        flex-wrap: wrap;
         min-width: 100%;
     }
 
-    .capa_site {
-        display: block;
+    .novidades h4 {
+        padding-top: 20px;
     }
 
-    .main_trailer {
-        display: block;
-        padding-top: 100px;
+    .coluna_lancamento iframe {
+        max-width: 350px;
     }
+}
 
-    .main_comentarios {
-        padding-top: 100px;
-    }
+@media screen and (max-width:1024px) {
 
-    .infos {
-        min-width: 100%;
-        font-size: 20px;
-        margin-top: 20px;
-    }
-
-    .avaliacao {
-        min-width: 100%;
-    }
+    /* Menu - Inicio */
 
     .container_nav {
         display: absolute;
@@ -801,19 +604,25 @@ section .section-title {
         z-index: 998;
     }
 
-    .menu1 a {
+    .menu1 a,
+    .texto_pes {
         display: block;
         text-align: center;
         width: 100%;
         margin-bottom: 20px;
     }
+
+    .texto_pes i {
+        display: none;
+    }
+
     .menu-icon {
         width: 50px;
         height: inherit;
         display: block;
         position: absolute;
         top: 55px;
-        right: 30px;
+        right: 120px;
         line-height: 60px;
         color: white;
         z-index: 999;
@@ -838,15 +647,54 @@ section .section-title {
         font-size: 1.7em;
     }
 
-    .search_box,
-    .search-icon {
+    /* Menu - Fim */
+
+    /* Making Of - Inicio */
+
+    .making-of {
+        display: block;
+    }
+
+    /* Making Of - Fim */
+
+    .img_capa {
+        padding-bottom: 15px;
+        width: 80%;
+    }
+
+    /* Footer - Inicio */
+
+    .logobx  {
         display: none;
     }
 
+    /* Footer - Fim */
 
+    /* Lançamentos - Inicio */
+
+    .novidades {
+        display: block;
+    }
+
+    .novidades img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lancamento {
+        display: none;
+    }
+
+    .lancamento_reserva,
+    .coluna_lancamento {
+        display: block;
+        text-align: justify;
+    }
+
+    .coluna_lancamento svg {
+        color: red;
+    }
+
+    /* Lançamentos - Fim */
 
 /* Medias Queries - Fim */
-  /* Carousel */
-
-
-
