@@ -543,6 +543,40 @@ section .section-title {
     }
 }
 
+#card {
+    padding: 5px;
+    margin: 5px;
+    background-color: black;
+}
+
+#card_img img {
+    width: 90%;
+}
+
+#card p, h5 {
+    color: white;
+}
+
+.btn_search {
+    margin: 5px;
+}
+
+#categoria,
+#time {
+    background-color: black;
+    color: rgb(215, 194, 15);
+    border-color: rgb(215, 194, 15);
+}
+
+.card-title {
+    color: white;
+}
+    
+#melhores,
+#MiCarousel {
+    display: block;
+}
+
 @media screen and (max-width:1024px) {
 
     /* Menu - Inicio */
@@ -652,19 +686,10 @@ section .section-title {
         width: 100%;
         height: 100%;
     }
-
-    .lancamento {
-        display: none;
-    }
-
-    .lancamento_reserva,
-    .coluna_lancamento {
+    
+    #melhores,
+    #MiCarousel {
         display: block;
-        text-align: justify;
-    }
-
-    .coluna_lancamento svg {
-        color: red;
     }
 
     /* Lançamentos - Fim */
