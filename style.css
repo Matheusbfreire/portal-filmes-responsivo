@@ -541,6 +541,10 @@ section .section-title {
     .coluna_lancamento iframe {
         max-width: 350px;
     }
+    
+    main .eu_quero_sumir_com_isso {
+        display: none;
+    }
 }
 
 #card {
@@ -570,11 +574,6 @@ section .section-title {
 
 .card-title {
     color: white;
-}
-    
-#melhores,
-#MiCarousel {
-    display: block;
 }
 
 @media screen and (max-width:1024px) {
@@ -685,11 +684,6 @@ section .section-title {
     .novidades img {
         width: 100%;
         height: 100%;
-    }
-    
-    #melhores,
-    #MiCarousel {
-        display: block;
     }
 
     /* Lançamentos - Fim */

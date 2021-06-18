@@ -8,7 +8,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_secondy_page.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -18,35 +18,37 @@
 
 <body>
     <header class="container header">
-        <img class="col-1 logo" src="img/logo.png">
-        <div class="container_nav">
-            <input type="checkbox" id="menuToggle">
-                <label for="menuToggle" class="menu-icon">
-                    <i class="fa fa-bars"></i>
-                    <i class="fa fa-times-circle x"></i>
-                </label>
-            </input>
-            <div class="row">
-                <nav class="nav menu1">
-                    <div class="col-3">
-                        <a class="nav-link active" href="index.html">HOME</a>
+        <div class="row">
+            <a href="index.html"><img class="col-1 col-md-12 logo" src="img/logo.png"></a>
+            <div class="col-10 col-md-12">
+                <div class="container_nav">
+                    <div class="row">
+                        <nav class="nav menu1">
+                            <div class="col-8 col-md-12 col-sm-12">
+                                <select onchange="filmesSelect(this)" name="categoria" id="categoria">
+                                    <option value="#" disabled selected>Categoria</option>
+                                    <option value="popular">Filmes Populares</option>
+                                    <option value="top_rated">Melhores Colocados</option>
+                                    <option value="now_playing">Em Cartaz</option>
+                                    <option value="upcoming">Lançamentos</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12"></div>
+                            <div class="col-1 col-md-12 col-sm-12">
+                                <div class="texto_pes">
+                                    <div class="row">
+                                        <dic class="col-md-12col-sm-12">
+                                            <input id="pesquisa"  type="text" placeholder="Pesquisar Filme">
+                                        </dic>
+                                        <div class="col-md-12 col-sm-12">
+                                            <button onclick="pesquisaFilmes()" type="button" class="btn btn-outline-warning btn_search">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                    <div class="col-8">
-                        <select onchange="filmesSelect(this)" name="categoria" id="categoria">
-                            <option value="#" disabled selected>Categoria</option>
-                            <option value="popular">Filmes Populares</option>
-                            <option value="top_rated">Melhores Colocados</option>
-                            <option value="now_playing">Em Cartaz</option>
-                            <option value="upcoming">Lançamentos</option>
-                        </select>
-                    </div>
-                    <div class="col-1">
-                        <div class="texto_pes">
-                            <input id="pesquisa"  type="text" placeholder="Pesquisar Filme">
-                            <button onclick="pesquisaFilmes()" type="button" class="btn btn-outline-warning btn_search">Search</button>
-                        </div>
-                    </div>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
